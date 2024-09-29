@@ -38,3 +38,34 @@ def nist_identical_serial_bits(bit_sequence: str, file_path: str, key: str) -> N
         print("Identical serial bits test. Error: Division by zero")
     except Exception as e:
         print("Identical serial bits test. Error: ", e)
+
+
+def nist_longest_sequence(bit_sequence: str, file_path: str, key: str) -> None:
+
+    try:
+        n = len(bit_sequence)
+        m = 8
+        blocks = [bit_sequence[i:i + m] for i in range(0, n, m)]
+        v = {1: 0, 2: 0, 3: 0, 4: 0}
+        for block in blocks:
+            max_count = 0
+            count = 0
+            for bit in block:
+                count = count + 1 if bit == "1" else 0
+                max_count = max(max_count, count)
+            match max_count:
+                case 0 | 1:
+                    v[1] += 1
+                case 2:
+                    v[2] += 1
+                case 3:
+                    v[3] += 1
+                case _:
+                    v[4] += 1
+        xi_square = 0
+        for i in range(4):
+            xi_square += pow(v[i + 1] - 16 * PI[i], 2) / (16 * PI[i])
+        p_v = mpmath.gammainc(3 / 2, xi_square / 2)
+        write_text_to_file(file_path, f'{key} : {p_v}\n')
+    except Exception as e:
+        print("Test for the longest sequence of ones in a block. Error: ", e)

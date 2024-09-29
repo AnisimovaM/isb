@@ -12,6 +12,9 @@ if __name__ == "__main__":
    nist_frequency_bit_test(sequences_java, settings["result_of_tests"], "Java")
    
    nist_identical_serial_bits(sequences_cpp, settings["result_of_tests"], "C++")
-   nist_identical_serial_bits(sequences_java, settings["result_of_tests"], "Java")
+   nist_identical_serial_bits(sequences_java, settings["result_of_tests"], "Java")  
+
+   nist_longest_sequence(sequences_cpp, settings["result_of_tests"], "C++")
+   nist_longest_sequence(sequences_java, settings["result_of_tests"], "Java")
 
    print('Successful work!')
