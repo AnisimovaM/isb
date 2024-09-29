@@ -1,4 +1,10 @@
 {
-    "initial_file_path": "D:/masha/labs/isb/isb/lab_3/texts/text.txt"
-
+    "initial_file_path": "D:/masha/labs/isb/isb/lab_3/texts/text.txt",
+    "encrypted_file_path": "D:/masha/labs/isb/isb/lab_3/texts/encrypted_text.txt",
+    "decrypted_file_path": "D:/masha/labs/isb/isb/lab_3/texts/decrypted_text.txt",
+    "public_key_path": "D:/masha/labs/isb/isb/lab_3/keys/public_key.pem",
+    "secret_key_path": "D:/masha/labs/isb/isb/lab_3/keys/secret_key.pem",
+    "symmetric_key_path": "D:/masha/labs/isb/isb/lab_3/keys/symmetric_key.txt",
+    "encrypted_key_path": "D:/masha/labs/isb/isb/lab_3/keys/encrypted_key.txt",
+    "decrypted_key_path": "D:/masha/labs/isb/isb/lab_3/keys/decrypted_key.txt"
 }

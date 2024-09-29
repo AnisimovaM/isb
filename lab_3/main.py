@@ -1,6 +1,6 @@
 import argparse
 from work_with_files import *
-
+import symmetric
 
 def menu():
 
@@ -18,7 +18,13 @@ def menu():
 
     match args:
         case args if args.generation:
-            pass
+            key_length = int(input(
+                    "Enter the key length in bits, in the range [128, 192, 256]: "
+                ))
+            print(f"Your key length: {key_length} ")
+
+            symmetric.generation_key(key_length)
+
         case args if args.encryption:
             pass
         case args if args.decryption:
