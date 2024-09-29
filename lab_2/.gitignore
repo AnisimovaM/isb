@@ -12,3 +12,9 @@ generators/random_generator_cpp/random_generator_cpp/x64/Debug/*
 generators/random_generator_cpp/x64/Debug/random_generator_cpp.exe
 generators/random_generator_cpp/x64/Debug/random_generator_cpp.pdb
 
+generators/random_generator_java/random_generator_java.iml
+generators/random_generator_java/.idea/misc.xml
+generators/random_generator_java/.idea/modules.xml
+generators/random_generator_java/.idea/vcs.xml
+generators/random_generator_java/.idea/codeStyles/codeStyleConfig.xml
+generators/random_generator_java/.idea/codeStyles/Project.xml
