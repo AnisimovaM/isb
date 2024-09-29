@@ -3,5 +3,9 @@
     "alphabet_path": "D:/masha/labs/isb/isb/lab_1/jsons/alphabets.json",
     "input_file_task1_path": "D:/masha/labs/isb/isb/lab_1/texts/input_text_for_task1.txt",
     "input_file_task2_path": "D:/masha/labs/isb/isb/lab_1/texts/cod2.txt",
-    "output_file_task1_path": "D:/masha/labs/isb/isb/lab_1/texts/encrypted_text_from_task1.txt"
+    "output_file_task1_path": "D:/masha/labs/isb/isb/lab_1/texts/encrypted_text_from_task1.txt",
+    "frequency_indexes_of_russian_path": "D:/masha/labs/isb/isb/lab_1/jsons/frequency_indexes_of_russian.json",
+    "frequency_indexes_of_task2_text_path": "D:/masha/labs/isb/isb/lab_1/jsons/frequency_indexes_of_task2_text.json",
+    "decryption_key_task2_path": "D:/masha/labs/isb/isb/lab_1/jsons/decryption_key_task2.json",
+    "output_file_task2_path": "D:/masha/labs/isb/isb/lab_1/texts/decrypted_text_from_task2.txt"
 }

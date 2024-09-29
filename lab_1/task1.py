@@ -1,6 +1,7 @@
 from work_with_files import *
 
 def create_substitution_cipher(key_path: str, alphabet_path: str) -> dict:
+
     alphabet = read_json_from_file(alphabet_path)
     alphabet = alphabet["russian_alphabet"]
 
@@ -12,6 +13,7 @@ def create_substitution_cipher(key_path: str, alphabet_path: str) -> dict:
 
 
 def encrypt(text: str, cipher_dict: dict) -> str:
+    
     encrypted_text = ""
     for char in text:
         if char.upper() in cipher_dict:
@@ -26,6 +28,7 @@ def encrypt(text: str, cipher_dict: dict) -> str:
 
 
 def task1() -> None:
+
     settings = read_json_from_file("settings.json")
 
     cipher_dict = create_substitution_cipher(settings["key_file_path"], settings["alphabet_path"])
@@ -35,4 +38,4 @@ def task1() -> None:
 
     write_text_to_file(settings["output_file_task1_path"], encrypted_text)
     
-    return
+    
