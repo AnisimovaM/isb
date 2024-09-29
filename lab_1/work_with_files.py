@@ -36,7 +36,7 @@ def read_json_from_file(file_path: str) -> dict:
         print(f"An error has occurred: {e}")
 
 
-def write_json_to_file(file_path: str, data: dict, indent: int = 3) -> None:
+def write_json_to_file(file_path: str, data: dict, indent: int = 4) -> None:
     try:
         with open(file_path, 'w', encoding='utf-8') as file:
             json.dump(data, file, ensure_ascii=False, indent=indent)
