@@ -14,7 +14,7 @@ def read_text_from_file(file_path: str) -> str:
 
 def write_text_to_file(file_path: str, text: str) -> None:
     try:
-        with open(file_path, 'w', encoding='utf-8') as file:
+        with open(file_path, 'a+', encoding='utf-8') as file:
             file.write(text)
         print("The information is successfully saved to the file.")
     except FileNotFoundError as e:
