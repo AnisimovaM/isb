@@ -1,2 +1,14 @@
 /venv
 /__pycache__
+
+generators/random_generator_cpp/random_generator_cpp/random_generator_cpp.vcxproj
+generators/random_generator_cpp/random_generator_cpp/random_generator_cpp.vcxproj.filters
+generators/random_generator_cpp/random_generator_cpp/random_generator_cpp.vcxproj.user
+generators/random_generator_cpp/random_generator_cpp.sln
+generators/random_generator_cpp/.vs/random_generator_cpp/v17/.suo
+generators/random_generator_cpp/.vs/random_generator_cpp/v17/Browse.VC.db
+generators/random_generator_cpp/.vs/random_generator_cpp/v17/ipch/AutoPCH/f1a6115a187aaeeb/RANDOM_GENERATOR_CPP.ipch
+generators/random_generator_cpp/random_generator_cpp/x64/Debug/*
+generators/random_generator_cpp/x64/Debug/random_generator_cpp.exe
+generators/random_generator_cpp/x64/Debug/random_generator_cpp.pdb
+
