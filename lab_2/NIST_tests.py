@@ -26,14 +26,13 @@ def nist_identical_serial_bits(bit_sequence: str, file_path: str, key: str) -> N
         ones_count = bit_sequence.count("1")
         share_of_unit = ones_count / n
         if abs(share_of_unit - 0.5) < (2 / math.sqrt(n)):
-            v = 0
-            for bit in range(n - 1):
-                if bit_sequence[bit] != bit_sequence[bit + 1]:
-                    v += 1
-            numerator = abs(v - 2 * n * share_of_unit * (1 - share_of_unit))
-            denominator = 2 * math.sqrt(2 * n) * share_of_unit * (1 - share_of_unit)
-            p_v = math.exp(numerator / denominator)
-            write_text_to_file(file_path, f'{key} : {p_v}\n')
+            v_n = len([i for i in range(n - 1) if bit_sequence[i] != bit_sequence[i + 1]])
+            p_v = math.erfc(abs(v_n - 2 * n * share_of_unit * (1 - share_of_unit)) /
+                (2 * math.sqrt(2 * n) * share_of_unit * (1 - share_of_unit)))
+        else:
+            p_v = 0
+           
+        write_text_to_file(file_path, f'{key} : {p_v}\n')
     except ZeroDivisionError:
         print("Identical serial bits test. Error: Division by zero")
     except Exception as e:
